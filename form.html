@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Jhakkas Motors!!</h2>
+    <h5>Any time anywhere!</h5>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" name="mypassword" id="Password">
+        </div>
+        <br>
+        <div>
+            <label for="customerid">Customer id:</label> <input type="number" name="mycustomerid" id="customerid">
+            
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="mygender" id="gender">Male <input type="radio" name="mygender" id="gender">Female
+            <input type="radio" name="mygender" id="gender">Others
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car:</label>
+            <select name="mycar" id="car">
+                <option value="mer">Mercedes-Benz</option>
+                <option value="bug">Bugatti Mistral</option>
+                <option value="sport">Lykan Hypersport</option>
+                <option value="aston">Aston Martin Valkyrie</option>
+                <option value="rolls">Rolls-Royce</option>
+                <option value="owl">Aspark Owl</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="comment">Any Comments:</label><br>
+            <textarea name="mycomment" id="comment">No Comments</textarea>
+        </div>
+        <div>
+            <label for="eligible">Do you agree our terms and conditions?</label>
+            <input type="checkbox" name="myeligibility" id="eligible">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit" id="submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+    <style>
+        form {
+            width: 280px;
+            height: 100px;
+            color: gold;
+        }
+        body{
+            width: 270px;
+            height: 100px;
+        }
+        h2 {
+            font-family: cursive;
+            color: red;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        h5{
+            margin-top: 0;
+            color: lightblue;
+            text-align:center;
+        }
+
+        input {
+            color: rgb(34, 0, 128);
+        }
+    </style>
+</body>
+
+</html>

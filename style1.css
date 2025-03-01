@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cur
+}
+
+body{
+    background-color: tomato;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 10%;
+      background-color: darkslateblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo {
+   font-family: cursive; 
+     font-size: 30px;
+    font-weight: 800;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar ul li:hover a{
+color: greenyellow;
+}
+
+.navbar ul li.active a{
+    color: greenyellow;
+}
+
+section{
+    background: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+
+}
+
+.home{
+   display: flex;
+   align-items: center;
+   height: 100vh;
+   padding: 70% 9% 0;
+   color: white;
+}
