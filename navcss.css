@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -96,9 +97,40 @@ nav ul li a{
 
 .content h1:hover{
     transform: scale3d(1.2, 1.2, 1.2);
-    color: black;
-    font-weight: 700;
+    color:darkturquoise;
+    font-weight: 900;
     text-transform: uppercase;
+    font-family: cursive;
+    
+
+}
+
+.content h1:hover {
+    color: transparent;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* Show Nepali text on hover */
+.content h1::after {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    content: "रघुनाथ पौडेल";
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.content h1:hover::after {
+    opacity: 1;
 }
 
 .content h3{
@@ -167,7 +199,7 @@ nav ul li a{
 .home-img .img-box {
     width: 27vw;
     height: 27vw;
-    background:darkseagreen;
+    background: hsl(197, 100%, 50%);;
     border-radius: 50%;
    padding: 5px;
    display: flex;
@@ -177,7 +209,7 @@ nav ul li a{
     position: relative;
     width: 100%;
     height: 100%;
-    background:rgb(37, 184, 241);
+    background:yellow;
     border-radius: 50%;
     display: flex;
     justify-content: center;
