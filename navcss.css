@@ -181,7 +181,7 @@ nav ul li a{
 
 .home-img .img-box .img-item img {
     position: absolute;
-    top: 25px;
+    top: 5px;
     display: block;
     width: 100%;
     object-fit: cover;
